@@ -7,7 +7,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "dev": "webpack -w"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,16 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^9.1.0",
-    "immoc-cli-lib": "^1.0.0"
+    "immoc-cli-lib": "^1.0.0",
+    "path-exists": "^5.0.0"
   },
   "bugs": {
     "url": "https://github.com/fionaVg1/immoc-cli/issues"
   },
   "homepage": "https://github.com/fionaVg1/immoc-cli#readme",
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
   }
 }
